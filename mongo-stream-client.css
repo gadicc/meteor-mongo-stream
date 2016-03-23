@@ -1,0 +1,9 @@
+.mongoStream {
+  font-family: monospace;
+  white-space: pre;
+  height: 10em;
+  overflow: auto;
+  background: black;
+  color: #999;
+  padding: 10px;
+}
