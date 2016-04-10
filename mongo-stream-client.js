@@ -4,7 +4,7 @@ import { Mongo } from 'meteor/mongo';
 import { Template } from 'meteor/templating';
 import { _ } from 'meteor/underscore';
 
-import { BlazeToReact } from 'meteor/thereactivestack:blazetoreact';
+import { blazeToReact } from 'meteor/gadicc:blaze-react-component';
 
 import './mongo-stream-client.html';
 
@@ -40,7 +40,7 @@ var scrollDown = _.debounce((tpl) => {
   div.scrollTop(div.prop('scrollHeight'));
 }, 50);
 
-const MongoStream = BlazeToReact('mongoStream');
+const MongoStream = blazeToReact('mongoStream');
 
 export { MongoStream };
 export default MongoStream;
